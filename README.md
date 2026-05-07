@@ -1,79 +1,55 @@
-# FeatherRace
+# FeatherRace — With Visualizations
 
-FeatherRace is a text-based Lua game where you raise, train, and manage a bird as it prepares for races. Players can improve stats, manage stamina, and make choices each day that affect race performance.
+FeatherRace is a bird racing game built in Lua. This version is a solo continuation of the original team project, rebuilt with a graphical interface using the [LÖVE2D](https://love2d.org/) framework instead of the terminal.
 
-## Features
+> **Looking for the original?** The text-based version of FeatherRace (built with a team) lives at [github.com/Bnguyen8091/FeatherRace](https://github.com/Bnguyen8091/FeatherRace). That version runs entirely in the terminal with no graphics — check it out to see where this project started.
 
-* Create and name your bird
-* Train and improve bird stats
-* Manage stamina through feeding and resting
-* View bird stats during gameplay
-* Race progression with increasing difficulty
-* Shop system for gameplay interaction
+## What's New in This Version
 
-## Project Files
+- Graphical visuals powered by LÖVE2D
+- Solo development — active updates and new features added regularly
+- Builds on the same core systems: bird stats, training, stamina, shop, and races
 
-* `main.lua` - Main game loop and player command handling
-* `stats.lua` - Bird creation, stats, stamina, and actions
-* `race.lua` - Race cycle, race display, and race progression
-* `shop.lua` - Shop-related mechanics
+## Core Features
+
+- Create and name your bird
+- Train and improve bird stats
+- Manage stamina through feeding and resting
+- Race progression with increasing difficulty
+- Shop system for upgrades and items
 
 ## Requirements
 
-Before running the game, make sure Lua is installed on your computer.
+Install [LÖVE2D](https://love2d.org/) (version 11.x or later) to run this project.
 
-### Check if Lua is installed
-
-Open a terminal or command prompt and run:
+### Check if LÖVE is installed
 
 ```bash
-lua -v
+love --version
 ```
 
-If Lua is installed, you should see a version number.
+## How to Run
 
-## How to Run the Application
-
-1. Download or clone the project files.
-2. Open a terminal in the project folder.
-3. Run the game with:
+1. Clone this repository:
 
 ```bash
-lua main.lua
+git clone https://github.com/Bnguyen8091/FeatherRace-WITH-VIZUALIZATIONS.git
+cd FeatherRace-WITH-VIZUALIZATIONS
 ```
-The game will then prompt you to enter your bird's name and begin gameplay.
 
-## Available Commands
-
-During the game, you can use the following commands:
-
-* `feed`
-* `train`
-* `play`
-* `rest`
-* `stats`
-* `shop`
-* `quit`
-
-## Notes
-
-* Make sure all Lua files stay in the same folder.
-* The game is designed to run in the terminal/command prompt.
-* If `lua main.lua` does not work, Lua may not be installed correctly or may not be added to your system PATH.
-
-## GitHub
-
-If using GitHub, you can clone the repository with:
+2. Run the game with LÖVE2D:
 
 ```bash
-git clone (https://github.com/Bnguyen8091/FeatherRace.git)
-cd FeatherRace
-lua main.lua
+love .
 ```
 
-## Authors
+## Project Files
 
-- Brian Nguyen
-- Eric Misiak
-- Alec Pike
-- Max Kogan
+- `main.lua` — Entry point and game loop
+- `stats.lua` — Bird creation, stats, and actions
+- `race.lua` — Race logic and progression
+- `shop.lua` — Shop mechanics
+
+## Author
+
+- Brian Nguyen (solo development)
